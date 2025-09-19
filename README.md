@@ -1,21 +1,21 @@
 # 🚀 RAGaaS – Modular Retrieval-Augmented Generation as a Service
-## 📂 Project Structure
 
-ragas/
-└── modules/
-├── rag-website/ # RAG pipeline for websites
-│ ├── indexing.js # Core logic for website scraping + RAG
-│ ├── chat.js # Unit tests
-│ └── README.md # Usage guide for this module
-├── rag-pdf/ # RAG pipeline for PDFs
-│ ├── src/ # Core PDF ingestion and RAG logic
-│ ├── tests/ # Unit tests
-│ └── README.md # Usage guide for this module
-├── memory/ # Memory layer for storing chat history
-│ ├── src/ # Core memory logic
-│ ├── adapters/ # Connectors (Qdrant, Pinecone, Redis, etc.)
-│ └── README.md # Integration and usage details
-└── ... # Future modules can be added here
+## 📂 Project Structure
+modules/
+├─ rag-website/        # RAG pipeline for websites
+│  ├─ indexing.js      # Core logic for website scraping + RAG
+│  ├─ chat.js          # Unit tests
+│  └─ README.md        # Module usage guide
+├─ rag-pdf/            # RAG pipeline for PDFs
+│  ├─ src/             # Core PDF ingestion + RAG logic
+│  ├─ tests/           # Unit tests
+│  └─ README.md        # Module usage guide
+├─ memory/             # Memory layer for storing chat history
+│  ├─ src/             # Core memory logic
+│  ├─ adapters/        # Connectors (Qdrant, Pinecone, Redis, etc.)
+│  └─ README.md        # Usage + integration details
+└─ ...                 # Future modules go here
+
 
 
 
