@@ -3,18 +3,20 @@
 ## 📂 Project Structure
 - ragas/
   - modules/
-    - rag-website/           # RAG pipeline for websites
-      - indexing.js          # Core logic for website scraping + RAG
-      - chat.js              # Chat interface over indexed website content
-      - README.md            # Usage guide for this module
-    - rag-pdf/               # RAG pipeline for PDF documents
-      - pdfIndex.js          # Core logic for PDF loading + indexing
-      - pdfChat.js           # Chat interface over indexed PDF content
-      - README.md            # Usage guide for this module
-    - rag-youtube/           # RAG pipeline for YouTube videos
-      - indexing.js          # Core logic for YouTube transcript extraction & indexing
-      - chat.js              # Chat interface over indexed YouTube video content
-      - README.md            # Usage guide for this module
+    - rag-website/            # RAG pipeline for websites
+      - indexing.js           # Core logic for website scraping + RAG
+      - chat.js               # Chat interface over indexed website content
+      - README.md             # Usage guide for this module
+
+    - rag-pdf/                # RAG pipeline for PDF documents
+      - index.js              # Core logic for PDF loading + indexing
+      - chat.js               # Chat interface over indexed PDF content
+      - README.md             # Usage guide for this module
+
+    - rag-youtube/            # RAG pipeline for YouTube videos
+      - index.js              # Core logic for YouTube transcript extraction & indexing
+      - chat.js               # Chat interface over indexed YouTube video content
+      - README.md             # Usage guide for this module
 
 ## 🧩 Modules Overview
 
