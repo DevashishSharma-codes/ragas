@@ -11,7 +11,7 @@ The project has two main scripts following the Retrieval-Augmented Generation (R
 - **Indexing (`indexing.js`)**:  
   Takes a YouTube URL, scrapes the transcript via browser automation, splits it into overlapping text chunks, converts chunks into embeddings, and stores them in the Qdrant vector database.
 
-- **Retrieval (`retrieval.js`)**:  
+- **Retrieval (`chat.js`)**:  
   Takes a user question, converts it to an embedding, retrieves the most relevant transcript chunks from Qdrant, and feeds them as context to an LLM (e.g., GPT-4o) to generate a well-informed answer.
 
 ---
@@ -25,7 +25,7 @@ The project has two main scripts following the Retrieval-Augmented Generation (R
 - Splits the transcript into 1000-character chunks with 200-character overlap using LangChain’s `RecursiveCharacterTextSplitter` for optimal LLM context handling.  
 - Generates embeddings using OpenAI’s `text-embedding-3-large` model and stores them in Qdrant.
 
-### retrieval.js — Retrieval & Answer Generation  
+### chat.js — Retrieval & Answer Generation  
 - Initializes OpenAI embeddings and client for question answering.  
 - Connects to Qdrant’s vector store and creates a retriever to fetch the top 4 most relevant transcript chunks based on query similarity.  
 - Builds a system prompt instructing the LLM to *only* answer based on retrieved context to avoid hallucinations.  
