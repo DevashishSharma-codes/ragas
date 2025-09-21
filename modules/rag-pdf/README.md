@@ -22,8 +22,6 @@ This module implements a chatbot that answers user queries by retrieving relevan
 - `.env` file configured with:
 OPENAI_API_KEY=your_openai_api_key_here
 
-text
-
 ---
 
 ## Installation
